@@ -1,0 +1,8 @@
+prefix=/home/ro/ROS/rostest2/devel
+
+Name: hellovscode
+Description: Description of hellovscode
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

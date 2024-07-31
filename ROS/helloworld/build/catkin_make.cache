@@ -1,0 +1,2 @@
+helloworld
+-DCATKIN_DEVEL_PREFIX=/home/ro/rostest/devel -DCMAKE_INSTALL_PREFIX=/home/ro/rostest/install -G Unix Makefiles

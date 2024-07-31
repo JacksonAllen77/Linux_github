@@ -1,0 +1,2 @@
+pubsub
+-DCATKIN_DEVEL_PREFIX=/home/ro/ROS/pubsub/devel -DCMAKE_INSTALL_PREFIX=/home/ro/ROS/pubsub/install -G Unix Makefiles

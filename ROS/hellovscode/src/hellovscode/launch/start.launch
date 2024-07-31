@@ -1,0 +1,7 @@
+<launch>
+    <!--乌龟GUI-->
+    <node pkg="turtlesim" type="turtlesim_node" name="turtlesim_GUI"/>
+    <node pkg="turtlesim" type="turtle_teleop_key" name="turtlesim_KEY" />
+    <!--自定义helloworld-->
+    <node pkg="hellovscode" type="hello_vscode_c" name="helloVscode" output="screen"/>
+</launch>
