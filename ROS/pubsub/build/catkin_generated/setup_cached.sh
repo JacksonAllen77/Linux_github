@@ -10,7 +10,7 @@
 export CMAKE_PREFIX_PATH="/home/ro/ROS/pubsub/devel:$CMAKE_PREFIX_PATH"
 export LD_LIBRARY_PATH="/home/ro/ROS/pubsub/devel/lib:$LD_LIBRARY_PATH"
 export PKG_CONFIG_PATH="/home/ro/ROS/pubsub/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PWD='/home/ro/ROS/pubsubmsg/build'
+export PWD='/home/ro/ROS/pubsub/build'
 export PYTHONPATH="/home/ro/ROS/pubsub/devel/lib/python3/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES='/home/ro/ROS/pubsub/devel/share/common-lisp'
 export ROS_PACKAGE_PATH="/home/ro/ROS/pubsub/src:$ROS_PACKAGE_PATH"

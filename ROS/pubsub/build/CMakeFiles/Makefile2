@@ -136,6 +136,7 @@ gtest/googletest/clean: gtest/googletest/CMakeFiles/gtest.dir/clean
 # Directory level rules for directory pubsub
 
 # Recursive "all" directory target.
+pubsub/all: pubsub/CMakeFiles/pubsubmsg_p.dir/all
 pubsub/all: pubsub/CMakeFiles/pubsub_generate_messages.dir/all
 pubsub/all: pubsub/CMakeFiles/pubsub_p.dir/all
 pubsub/all: pubsub/CMakeFiles/pubsub_s.dir/all
@@ -148,6 +149,7 @@ pubsub/preinstall:
 .PHONY : pubsub/preinstall
 
 # Recursive "clean" directory target.
+pubsub/clean: pubsub/CMakeFiles/pubsubmsg_p.dir/clean
 pubsub/clean: pubsub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 pubsub/clean: pubsub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 pubsub/clean: pubsub/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
@@ -423,6 +425,33 @@ gtest: gtest/googletest/CMakeFiles/gtest.dir/rule
 gtest/googletest/CMakeFiles/gtest.dir/clean:
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/clean
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/clean
+
+#=============================================================================
+# Target rules for target pubsub/CMakeFiles/pubsubmsg_p.dir
+
+# All Build rule for target.
+pubsub/CMakeFiles/pubsubmsg_p.dir/all: pubsub/CMakeFiles/pubsub_generate_messages_cpp.dir/all
+	$(MAKE) -f pubsub/CMakeFiles/pubsubmsg_p.dir/build.make pubsub/CMakeFiles/pubsubmsg_p.dir/depend
+	$(MAKE) -f pubsub/CMakeFiles/pubsubmsg_p.dir/build.make pubsub/CMakeFiles/pubsubmsg_p.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ro/ROS/pubsub/build/CMakeFiles --progress-num=20,21 "Built target pubsubmsg_p"
+.PHONY : pubsub/CMakeFiles/pubsubmsg_p.dir/all
+
+# Build rule for subdir invocation for target.
+pubsub/CMakeFiles/pubsubmsg_p.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ro/ROS/pubsub/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 pubsub/CMakeFiles/pubsubmsg_p.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ro/ROS/pubsub/build/CMakeFiles 0
+.PHONY : pubsub/CMakeFiles/pubsubmsg_p.dir/rule
+
+# Convenience name for target.
+pubsubmsg_p: pubsub/CMakeFiles/pubsubmsg_p.dir/rule
+
+.PHONY : pubsubmsg_p
+
+# clean rule for target.
+pubsub/CMakeFiles/pubsubmsg_p.dir/clean:
+	$(MAKE) -f pubsub/CMakeFiles/pubsubmsg_p.dir/build.make pubsub/CMakeFiles/pubsubmsg_p.dir/clean
+.PHONY : pubsub/CMakeFiles/pubsubmsg_p.dir/clean
 
 #=============================================================================
 # Target rules for target pubsub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir

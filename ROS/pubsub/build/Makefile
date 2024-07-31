@@ -285,6 +285,19 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
+# Target rules for targets named pubsubmsg_p
+
+# Build rule for target.
+pubsubmsg_p: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pubsubmsg_p
+.PHONY : pubsubmsg_p
+
+# fast build rule for target.
+pubsubmsg_p/fast:
+	$(MAKE) -f pubsub/CMakeFiles/pubsubmsg_p.dir/build.make pubsub/CMakeFiles/pubsubmsg_p.dir/build
+.PHONY : pubsubmsg_p/fast
+
+#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_lisp
 
 # Build rule for target.
@@ -683,6 +696,7 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... pubsubmsg_p"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_cpp"
