@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+pubsub/CMakeFiles/pubsubmsg_s.dir/rule:
+	cd /home/ro/ROS/pubsub/build && $(MAKE) -f CMakeFiles/Makefile2 pubsub/CMakeFiles/pubsubmsg_s.dir/rule
+.PHONY : pubsub/CMakeFiles/pubsubmsg_s.dir/rule
+
+# Convenience name for target.
+pubsubmsg_s: pubsub/CMakeFiles/pubsubmsg_s.dir/rule
+
+.PHONY : pubsubmsg_s
+
+# fast build rule for target.
+pubsubmsg_s/fast:
+	cd /home/ro/ROS/pubsub/build && $(MAKE) -f pubsub/CMakeFiles/pubsubmsg_s.dir/build.make pubsub/CMakeFiles/pubsubmsg_s.dir/build
+.PHONY : pubsubmsg_s/fast
+
+# Convenience name for target.
 pubsub/CMakeFiles/pubsubmsg_p.dir/rule:
 	cd /home/ro/ROS/pubsub/build && $(MAKE) -f CMakeFiles/Makefile2 pubsub/CMakeFiles/pubsubmsg_p.dir/rule
 .PHONY : pubsub/CMakeFiles/pubsubmsg_p.dir/rule
@@ -698,6 +713,33 @@ src/pubsubmsg_p.cpp.s:
 	cd /home/ro/ROS/pubsub/build && $(MAKE) -f pubsub/CMakeFiles/pubsubmsg_p.dir/build.make pubsub/CMakeFiles/pubsubmsg_p.dir/src/pubsubmsg_p.cpp.s
 .PHONY : src/pubsubmsg_p.cpp.s
 
+src/pubsubmsg_s.o: src/pubsubmsg_s.cpp.o
+
+.PHONY : src/pubsubmsg_s.o
+
+# target to build an object file
+src/pubsubmsg_s.cpp.o:
+	cd /home/ro/ROS/pubsub/build && $(MAKE) -f pubsub/CMakeFiles/pubsubmsg_s.dir/build.make pubsub/CMakeFiles/pubsubmsg_s.dir/src/pubsubmsg_s.cpp.o
+.PHONY : src/pubsubmsg_s.cpp.o
+
+src/pubsubmsg_s.i: src/pubsubmsg_s.cpp.i
+
+.PHONY : src/pubsubmsg_s.i
+
+# target to preprocess a source file
+src/pubsubmsg_s.cpp.i:
+	cd /home/ro/ROS/pubsub/build && $(MAKE) -f pubsub/CMakeFiles/pubsubmsg_s.dir/build.make pubsub/CMakeFiles/pubsubmsg_s.dir/src/pubsubmsg_s.cpp.i
+.PHONY : src/pubsubmsg_s.cpp.i
+
+src/pubsubmsg_s.s: src/pubsubmsg_s.cpp.s
+
+.PHONY : src/pubsubmsg_s.s
+
+# target to generate assembly for a file
+src/pubsubmsg_s.cpp.s:
+	cd /home/ro/ROS/pubsub/build && $(MAKE) -f pubsub/CMakeFiles/pubsubmsg_s.dir/build.make pubsub/CMakeFiles/pubsubmsg_s.dir/src/pubsubmsg_s.cpp.s
+.PHONY : src/pubsubmsg_s.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -707,6 +749,7 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... edit_cache"
+	@echo "... pubsubmsg_s"
 	@echo "... pubsubmsg_p"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... install/local"
@@ -750,6 +793,9 @@ help:
 	@echo "... src/pubsubmsg_p.o"
 	@echo "... src/pubsubmsg_p.i"
 	@echo "... src/pubsubmsg_p.s"
+	@echo "... src/pubsubmsg_s.o"
+	@echo "... src/pubsubmsg_s.i"
+	@echo "... src/pubsubmsg_s.s"
 .PHONY : help
 
 

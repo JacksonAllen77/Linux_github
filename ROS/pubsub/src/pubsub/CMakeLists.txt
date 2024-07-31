@@ -136,6 +136,7 @@ include_directories(
 add_executable(pubsub_p src/pubsub_p.cpp)
 add_executable(pubsub_s src/pubsub_s.cpp)
 add_executable(pubsubmsg_p src/pubsubmsg_p.cpp)
+add_executable(pubsubmsg_s src/pubsubmsg_s.cpp)
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
@@ -145,6 +146,7 @@ add_executable(pubsubmsg_p src/pubsubmsg_p.cpp)
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 add_dependencies(pubsubmsg_p ${PROJECT_NAME}_generate_messages_cpp)
+add_dependencies(pubsubmsg_s ${PROJECT_NAME}_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(pubsub_p
@@ -154,6 +156,9 @@ target_link_libraries(pubsub_s
   ${catkin_LIBRARIES}
 )
 target_link_libraries(pubsubmsg_p
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(pubsubmsg_s
   ${catkin_LIBRARIES}
 )
 #############
