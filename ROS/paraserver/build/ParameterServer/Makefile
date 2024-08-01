@@ -393,6 +393,21 @@ rosgraph_msgs_generate_messages_lisp/fast:
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
+ParameterServer/CMakeFiles/del_d.dir/rule:
+	cd /home/ro/ROS/paraserver/build && $(MAKE) -f CMakeFiles/Makefile2 ParameterServer/CMakeFiles/del_d.dir/rule
+.PHONY : ParameterServer/CMakeFiles/del_d.dir/rule
+
+# Convenience name for target.
+del_d: ParameterServer/CMakeFiles/del_d.dir/rule
+
+.PHONY : del_d
+
+# fast build rule for target.
+del_d/fast:
+	cd /home/ro/ROS/paraserver/build && $(MAKE) -f ParameterServer/CMakeFiles/del_d.dir/build.make ParameterServer/CMakeFiles/del_d.dir/build
+.PHONY : del_d/fast
+
+# Convenience name for target.
 ParameterServer/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
 	cd /home/ro/ROS/paraserver/build && $(MAKE) -f CMakeFiles/Makefile2 ParameterServer/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : ParameterServer/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
@@ -421,6 +436,33 @@ rosgraph_msgs_generate_messages_py: ParameterServer/CMakeFiles/rosgraph_msgs_gen
 rosgraph_msgs_generate_messages_py/fast:
 	cd /home/ro/ROS/paraserver/build && $(MAKE) -f ParameterServer/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make ParameterServer/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
+
+src/del_d.o: src/del_d.cpp.o
+
+.PHONY : src/del_d.o
+
+# target to build an object file
+src/del_d.cpp.o:
+	cd /home/ro/ROS/paraserver/build && $(MAKE) -f ParameterServer/CMakeFiles/del_d.dir/build.make ParameterServer/CMakeFiles/del_d.dir/src/del_d.cpp.o
+.PHONY : src/del_d.cpp.o
+
+src/del_d.i: src/del_d.cpp.i
+
+.PHONY : src/del_d.i
+
+# target to preprocess a source file
+src/del_d.cpp.i:
+	cd /home/ro/ROS/paraserver/build && $(MAKE) -f ParameterServer/CMakeFiles/del_d.dir/build.make ParameterServer/CMakeFiles/del_d.dir/src/del_d.cpp.i
+.PHONY : src/del_d.cpp.i
+
+src/del_d.s: src/del_d.cpp.s
+
+.PHONY : src/del_d.s
+
+# target to generate assembly for a file
+src/del_d.cpp.s:
+	cd /home/ro/ROS/paraserver/build && $(MAKE) -f ParameterServer/CMakeFiles/del_d.dir/build.make ParameterServer/CMakeFiles/del_d.dir/src/del_d.cpp.s
+.PHONY : src/del_d.cpp.s
 
 src/get_g.o: src/get_g.cpp.o
 
@@ -504,8 +546,12 @@ help:
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... del_d"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... src/del_d.o"
+	@echo "... src/del_d.i"
+	@echo "... src/del_d.s"
 	@echo "... src/get_g.o"
 	@echo "... src/get_g.i"
 	@echo "... src/get_g.s"

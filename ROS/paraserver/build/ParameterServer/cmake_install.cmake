@@ -52,3 +52,15 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ParameterServer" TYPE FILE FILES "/home/ro/ROS/paraserver/src/ParameterServer/package.xml")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ParameterServer" TYPE PROGRAM FILES "/home/ro/ROS/paraserver/build/ParameterServer/catkin_generated/installspace/set_p.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ParameterServer" TYPE PROGRAM FILES "/home/ro/ROS/paraserver/build/ParameterServer/catkin_generated/installspace/del_p.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ParameterServer" TYPE PROGRAM FILES "/home/ro/ROS/paraserver/build/ParameterServer/catkin_generated/installspace/get_p.py")
+endif()
+
