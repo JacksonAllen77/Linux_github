@@ -1,0 +1,8 @@
+prefix=/home/ro/ROS/paraserver/devel
+
+Name: ParameterServer
+Description: Description of ParameterServer
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

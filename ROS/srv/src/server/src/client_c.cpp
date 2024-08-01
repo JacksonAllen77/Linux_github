@@ -10,6 +10,12 @@
     实现参数的动态提交：
         1.格式：rosrun xxxxx xxxxxx 12 34
         2,节点执行时，需要获取命令中的参数，并组织进request
+    问题：
+        如果先启动客户端，那么会请求异常
+    需求：
+        如果先启动客户端，不要抛出异常，而是挂起，等服务器启动后，再正常请求
+    解决方法：
+        在ROS中内置了相关函数，这些函数可以让客户端启动后挂起，等待服务器启动
 */
 
 int main(int argc,char *argv[])
@@ -30,6 +36,9 @@ int main(int argc,char *argv[])
     ai.request.num1=atoi(argv[1]);//atoi将字符型转换成整型
     ai.request.num2=atoi(argv[2]);
     //处理响应
+    //调用判断服务器状态的函数
+    // client.waitForExistence();//等待服务器启动【方案1】
+    ros::service::waitForService("Jackson");//等待服务器启动【方案2】
     bool flag = client.call(ai);
     if(flag)
     {

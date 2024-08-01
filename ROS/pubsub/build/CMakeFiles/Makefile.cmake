@@ -24,6 +24,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/ro/ROS/pubsub/src/pubsub/package.xml"
   "/home/ro/ROS/pubsub/src/pubsub/scripts/pubsub_p.py"
   "/home/ro/ROS/pubsub/src/pubsub/scripts/pubsub_s.py"
+  "/home/ro/ROS/pubsub/src/pubsub/scripts/pubsubmsg_p.py"
+  "/home/ro/ROS/pubsub/src/pubsub/scripts/pubsubmsg_s.py"
   "/opt/ros/noetic/share/catkin/cmake/all.cmake"
   "/opt/ros/noetic/share/catkin/cmake/assert.cmake"
   "/opt/ros/noetic/share/catkin/cmake/atomic_configure_file.cmake"

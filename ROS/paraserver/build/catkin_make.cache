@@ -1,0 +1,2 @@
+ParameterServer
+-DCATKIN_DEVEL_PREFIX=/home/ro/ROS/paraserver/devel -DCMAKE_INSTALL_PREFIX=/home/ro/ROS/paraserver/install -G Unix Makefiles

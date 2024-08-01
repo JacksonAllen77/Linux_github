@@ -96,3 +96,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pubsub" TYPE PROGRAM FILES "/home/ro/ROS/pubsub/build/pubsub/catkin_generated/installspace/pubsub_s.py")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pubsub" TYPE PROGRAM FILES "/home/ro/ROS/pubsub/build/pubsub/catkin_generated/installspace/pubsubmsg_p.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pubsub" TYPE PROGRAM FILES "/home/ro/ROS/pubsub/build/pubsub/catkin_generated/installspace/pubsubmsg_s.py")
+endif()
+
